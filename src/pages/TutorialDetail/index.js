@@ -8,7 +8,7 @@ function TutorialDetail(props) {
 
   const opts = {
     height: '390',
-    width: '640',
+    maxWidth: '640',
     playerVars: {
       // https://developers.google.com/youtube/player_parameters
       autoplay: 1,
@@ -40,7 +40,7 @@ function TutorialDetail(props) {
             //id={string}                       // defaults -> null
             //className={string}                // defaults -> null
             //containerClassName={string}       // defaults -> ''
-            //opts={obj}                        // defaults -> {}
+            opts={opts}                        // defaults -> {}
             //onReady={func}                    // defaults -> noop
             //onPlay={func}                     // defaults -> noop
             //onPause={func}                    // defaults -> noop
